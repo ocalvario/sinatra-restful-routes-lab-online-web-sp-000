@@ -1,3 +1,4 @@
 #Placeholder for a model
 class Recipe < ActiveRecord::Base
-end
+  validates_presence_of :name, :ingredients, :cook_time
+end 
